@@ -1,5 +1,18 @@
 body {
-    padding: 100px;
-    text-align: center;
-    font-size: 2em;
-  }
+  margin: 0 auto;
+  font-size: 16px;
+  max-width: 1000px;
+}
+header {
+  padding: 2em;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5em;
+}
+.note {
+  padding: 1em;
+  border: dotted 1px #ccc;
+  color: #777;
+  background-color: #ffffee;
+}
