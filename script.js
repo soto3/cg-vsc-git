@@ -13,4 +13,20 @@ if (tocHtml) {
   ol.classList.add('toc');
   ol.innerHTML = tocHtml;
   document.querySelector('main').prepend(ol);
+  toHamburgerMenu(ol);
+}
+
+// ★追加: ハンバーガーメニュー化する関数
+function toHamburgerMenu(menu) {
+  menu.classList.add('hamburger-menu');
+  const menuOpener = document.createElement('button');
+  menuOpener.classList.add('hamburger');
+  menuOpener.innerHTML = `<span></span><span></span><span></span>`;
+  document.querySelector('header').prepend(menuOpener);
+  const el = document.querySelector('.hamburger');
+  el.addEventListener('click', () => {
+    el.classList.toggle('active');
+    if (el.classList.contains('active')) menu.classList.add('active');
+    else menu.classList.remove('active');
+  });
 }
