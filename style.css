@@ -16,3 +16,13 @@ header h1 {
   color: #777;
   background-color: #ffffee;
 }
+.toc {
+  padding: 2em 3em;
+  border: dotted 2px #555;
+  border-radius: 10px;
+  display: inline-block;
+}
+.toc a {
+  color: #0055aa;
+  text-decoration: none;
+}
